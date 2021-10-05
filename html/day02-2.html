@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div style="background-color:pink">
+		<span style="background-color:blue">div</span>
+		<span style="background-color:yellow">첫 번째</span>
+		영역
+	</div>
+	<div>div 두 번째 영역</div>
+	<div>div 세 번째 영역</div>
+	
+	<span style="background-color:skyblue">span 1</span>
+	<span>span 2</span>
+	<span>span 3</span>
+	
+	<hr>
+	
+	<fieldset style="width:300px">
+		<legend>취미 조사</legend>
+		<input type="checkbox">게임
+		<input type="checkbox">멍타기
+		<input type="checkbox">컴퓨터
+	</fieldset>
+	
+	<hr>
+	
+	<textarea rows="3" cols="50"></textarea>
+	
+	<hr>
+	
+	<!-- method
+		 get(default) -> 주소에 데이터가 추가됨
+		 post -> 주소에 데이터가 안보임 / 많은 양의 데이터 처리 가능 -->
+	<form action="day02.html" method="get">
+		<select name="select">
+			<option value="p1">바나나
+			<option value="p2">사과
+			<option value="p3">배
+			<option value="p4">복숭
+		</select><br>
+		<input type="text" name="query" placeholder="search text"><br>
+		<input type="text" name="id" placeholder="input id"><br>
+		<input type="password" name="pwd" placeholder="input password"><br>
+		<input type="submit" value="로그인">
+		<input type="reset" value="취소">
+		<input type="button" value="버튼">
+	</form>
+	
+	<hr>
+	
+	취미조사<br>
+	<input type="checkbox">자바공부
+	<input type="checkbox">놀지않고 공부
+	<input type="checkbox" checked>계속 공부하자
+	
+	<hr>
+	
+	<input type="radio" name="age">10대
+	<input type="radio" name="age" checked>20대
+	<input type="radio" name="age">30대
+	
+	<hr>
+	
+	<input type="button" value="버어튼"><br>
+	<input type="submit" value="버어튼"><br>
+	<input type="reset" value="버어튼"><br>
+	<input type="text" value="버어튼"><br>
+	<input type="password" value="버어튼"><br>
+	라디오 버튼<input type="radio"><br>
+	체크 박스<input type="checkbox"><br>
+</body>
+</html>
