@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	nav {
+		width: 700px;
+		background-color: pink;
+	}
+	nav ul {
+		justify-content: flex-end;
+		display: flex;
+		list-style: none;
+	}
+	nav ul li {
+		background-color: red;
+		padding: 10px 10px 10px 10px;
+		margin: 0px 3px 0px 3px;
+	}
+	nav ul li:hover {
+		background-color: gray;
+	}
+	a {
+		width: 100%;
+		text-decoration: none;
+		color: white;
+	}
+	img {
+		width: 700px;
+	}
+	input:focus {
+		background-color: red;
+	}
+	label {
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#id1">1번 문제로 이동</a></li>
+			<li><a href="#id2">2번 문제로 이동</a></li>
+			<li><a href="#id3">3번 문제로 이동</a></li>
+			<li><a href="#id4">4번 문제로 이동</a></li>
+		</ul>
+	</nav>
+	<img src="resources/images/quiz.png">
+	<hr>
+	<h3>정답 확인 클릭시 정답 보여짐</h3>
+	<hr>
+	<section>
+		<article>
+			<h3 id="id1" style="color: green">문제1) 정적 언어는?</h3>
+			정답 작성 <input type="text"> 정답 클릭 확인 <label>html, javascript, css등</label>
+		</article>
+		<hr>
+		<article>
+			<h3 id="id2" style="color: red">문제2) 서버 사이트 언어는?</h3>
+			정답 작성 <input type="text"> 정답 클릭 확인 <label>jsp, django, php등</label>
+		</article>
+		<hr>
+		<article>
+			<h3 id="id3" style="color: pink">문제3) 프로그래밍 언어는?</h3>
+			정답 작성 <input type="text"> 정답 클릭 확인 <label>java, c, python등</label>
+		</article>
+		<hr>
+		<article>
+			<h3 id="id4" style="color: blue">문제4) 클라이언트 사이드 언어는?</h3>
+			정답 작성 <input type="text"> 정답 클릭 확인 <label>html, javascript, css등</label>
+		</article>
+		<hr>
+	</section>
+</body>
+</html>

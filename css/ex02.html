@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h2:first-letter {
+		font-size: 30px;
+		color: red;
+		text-transform: uppercase;
+	}
+	h3:first-line {
+		color: blue;
+	}
+	input:focus {
+		background-color: lime;
+	}
+	label {
+		color: white;
+	}
+	input:checked + label {
+		background-color: gray;
+	}
+	.div01 {
+		background-color: yellow;
+		width: 300px;
+		height: 80px;
+		border: 15px solid navy;
+		/*
+		border-bottom: 15px solid navy;
+		border-top: 15px double red;
+		border-right: 5px dotted gray;
+		*/
+		padding: 20px 0;
+		/*
+		padding-top: 20px;
+		margin-left: 50px;
+		*/
+		margin-top: 50px;
+	}
+	.title {
+		font-family: "궁서체";
+		text-shadow: 10px 10px 15px black;
+		font-size: 50pt;
+	}
+	img {
+		width: 200px;
+		height: 150px;
+		box-shadow: 10px 10px 15px blue;
+	}
+</style>
+</head>
+<body>
+	<img src="resources/images/quiz.png">
+	
+	<hr>
+	
+	<h1 class="title">제목이 들어갑니다</h1>
+	
+	<hr>
+	
+	<div class="div01">
+		박스모델 padding, border, margin 속성의 기본값은 0<br>
+		상하좌우 방향 top, right, bottom, left 순서<br>
+		
+	</div>
+	
+	<hr>
+	
+	<h2>hello</h2>
+	<h3>문제)대한민국<br> 수도는??</h3>
+	정답<input type="text"><br>
+	힌트<input type="checkbox"><label>힌트입니다~</label>
+</body>
+</html>

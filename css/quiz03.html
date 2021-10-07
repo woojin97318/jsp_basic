@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrap {
+		width: 700px;
+	}
+	
+	#header {
+		display: flex;
+		font-style: italic;
+		text-align: center;
+	}
+	#header img {
+		width: 105px;
+	}
+	#header h1 {
+		width: 595%
+	}
+	
+	#nav {
+		background-color: gray;
+	}
+	#nav ul {
+		display: flex;
+		list-style: none;
+		color: white;
+	}
+	#nav ul li {
+		margin: 5px 15px;
+	}
+	
+	#wrap01 {
+		display: flex;
+	}
+	#wrap01 aside {
+		margin: 0 30px 0 30px;
+	}
+	#wrap01 section article {
+		margin: 5px 0;
+		display: flex;
+	}
+	#wrap01 section img {
+		width: 50px;
+	}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<img src="resources/images/l_정우성.jpg">
+			<h1>맛집탐방 이야기 ^^</h1>
+		</header>
+		
+		<nav id="nav">
+			<ul>
+				<li>HOME</li>
+				<li>게시판</li>
+				<li>내정보</li>
+			</ul>
+		</nav>
+		
+		<div id="wrap01">
+			<aside style="width:100px;">
+				<img src="resources/images/l_정우성.jpg" width="100px">
+				<img src="resources/images/l_정우성.jpg" width="100px">
+			</aside>
+			
+			<section style="width:350px;">
+				<h3>< 오늘의 맛집 ></h3>
+				<article>
+					<div>오늘 방문한 곳은 맛있는 음식이 나오는 집.</div>
+					<div><img src="resources/images/l_정우성.jpg"></div>
+				</article>
+				<article>
+					<div>오늘 방문한 곳은 맛있는 음식이 나오는 집.</div>
+					<div><img src="resources/images/l_정우성.jpg"></div>
+				</article>
+				<article>
+					<div>오늘 방문한 곳은 맛있는 음식이 나오는 집.</div>
+					<div><img src="resources/images/l_정우성.jpg"></div>
+				</article>
+			</section>
+			
+			<aside style="width:250px;">
+				<table>
+					<tr>
+						<td><input type="text"></td>
+						<td rowspan = "2"><input type="button" value="로그인" width=""></td>
+					</tr>
+					<tr>
+						<td><input type="text"></td>
+					</tr>
+				</table>
+				<br>
+				<a href="#">회원가입</a> / 
+				<a href="#">ID/PW찾기</a>
+				<h3>오늘의 뉴스</h3>
+				날씨 : -32도<br>
+				미세먼지 : 심함<br>
+				운세 : 누구 보다 좋음
+			</aside>
+		</div>
+		
+		<footer>
+			<hr>
+			바텀글귀
+		</footer>
+	</div>
+</body>
+</html>

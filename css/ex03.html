@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	* {box-sizing: border-box;}
+	
+	#wrap {width: 460px; background-color: gray;}
+	.div {width: 150px; margin-right: 3px; }
+	.a {border: 1px solid black; float: right;}
+	.b {border: 10px solid black; float: right;}
+	.c {border: 20px solid black; float: right;}
+	
+	#wrap02 {width: 200px; border: 1px solid black; text-align: center;
+		display: flex; flex-flow: column;}
+	#wrap02 div {width: 100%;}
+	#wrap02 .d01 {order: 1; background-color: red;}
+	#wrap02 .d02 {order: 2; background-color: green; display: flex;}
+	#wrap02 div:nth-child(3) {order: 3; background-color: aqua;}
+	
+	.c01 {order: 2; background-color: gray}
+	.c02 {order: 1; background-color: fuchsia}
+</style>
+</head>
+<body>
+	<div id="wrap02">
+		<div class="d01"><h1>1</h1></div>
+		<div class="d02">
+			<div class="c01"><h1>내용1</h1></div>
+			<div class="c02"><h1>내용2</h1></div>
+		</div>
+		<div><h1>3</h1></div>
+	</div>
+	
+	<hr>
+	
+	<div id="wrap">
+		<div class="div a">333</div>
+		<div class="div b">222</div>
+		<div class="div c">111</div>
+	</div>
+</body>
+</html>
