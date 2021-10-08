@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* static: 그냥 순차적으로 나열되는 방식. 위치 조정 불가 */
+	/*
+	.span1 {
+		background-color: yellow;
+		position: static;
+		top: 5px;
+	}
+	.span2 {
+		background-color: red;
+		left: 15px;
+	}
+	.span3 {
+		background-color: pink;
+		position: static;
+		top: -15px;
+	}
+	*/
+	/* relative: static태그를 기준으로 위치 조정이 된다. */
+	/*
+	.span1 {
+		background-color: yellow;
+		position: relation;
+		top: 5px;
+	}
+	.span2 {
+		background-color: red;
+		position: relation;
+		left: 15px;
+	}
+	.span3 {
+		background-color: pink;
+		position: rleation;
+		top: -15px;
+	}
+	*/
+	/* absolute:body를 기준으로 위치 조정이 된다. */
+	.span1 {
+		background-color: yellow;
+		position: absolute;
+		top: 5px;
+	}
+	.span2 {
+		background-color: red;
+		position: absolute;
+		left: 15px;
+	}
+	.span3 {
+		background-color: pink;
+		position: absolute;
+		top: -15px;
+	}
+</style>
+</head>
+<body>
+	<div style="background-color: green;">
+		position의 기본값은 static 입니다.
+	</div>
+	<span class="span1">span1</span>
+	<span class="span2">span2</span>
+	<span class="span3">span3</span>
+</body>
+</html>

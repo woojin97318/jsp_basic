@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+}
+.wrap {
+	width: 1920px;
+	margin: 0 auto;
+}
+a.logo img {
+	width: 105px;
+	margin-top: 10px;
+}
+nav {
+	width: 1920px; height: 70px;
+	background-color: #000;
+	position: fixed;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	margin-right: 30px;
+}
+nav ul li {
+	margin: 18px 10px;; padding: 8px 15px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+nav ul li a:hover {
+	color: orange;
+	padding-bottom: 3px;
+	border-bottom: 1px solid orange;
+	transition: all 0.25s;
+}
+.nav-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.back-image1 {
+	background-image: url("../images/image-back1.jpg");
+}
+.back-image2 {
+	background-image: url("../images/image-back2.jpg");
+}
+.back-image3 {
+	background-image: url("../images/image-back3.jpg");
+}
+.back-image4 {
+	background-image: url("../images/image-back4.jpg");
+}
+.full-page {
+	height: 1080px;
+}
+.title {
+	padding: 50px 0 0 200px;
+	text-shadow: 10px 10px 15px white;
+	font-size: 70pt; color: white;
+	background-color: rgba(0, 0, 0, .3);
+}
+.inner {
+	margin: 0 auto;
+	width: 1000px; height: 500px;
+	background-color: rgba(255, 255, 255, .5);
+	color: black;
+}
+
+form {
+		margin: auto;
+		width: 70%;
+}
+form label {
+	width: 120px;
+	display: inline-block;
+	padding: 7px 0;
+	vertical-align: top;
+}
+form input {
+	border-radius: 5px;
+	width: 50%; height: 25px;
+	border: 1px solid gray;
+}
+form textarea {
+	border-radius: 5px;
+	width: 70%; height: 100px;
+}
+form button {
+	margin-left: 542px; padding: 10px 20px;
+	border-radius: 5px;
+	background-color: skyblue; color: blue;
+}
+form button:active {
+	margin-left: 542px; padding: 10px 20px;
+	border-radius: 15px;
+	background-color: olive;
+}

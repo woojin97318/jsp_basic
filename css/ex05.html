@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.sp {
+		background-color: cyan;
+		width: 400px; height: 50px;
+	}
+	.rp1 {
+		position: fixed;
+		right: 30px; top: 10px;
+		background-color: orange;
+		width: 400px; height: 50px;
+		z-index: -1;
+	}
+	.rp2 {
+		position: absolute;
+		right: 60px; top: 20px;
+		background-color: lightgreen;
+		width: 400px; height: 50px;
+		z-index: 1;
+	}
+	h1 {
+		position: relative;
+		z-index: 111111;
+	}
+</style>
+</head>
+<body>
+	<h1>위치지정 2 : <a href="#">클릭</a></h1>
+	<p class="sp">정적위치 설정</p>
+	<p class="sp">정적위치 설정</p>
+	<p class="sp">정적위치 설정</p>
+	<div class="rp1">고정위치 설정(fixed) = right 30px, top 10px</div>
+	<div class="rp2">절대위치 설정(absolute) = right 60px, top 20px</div>
+</body>
+</html>
