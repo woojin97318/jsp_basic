@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="test.js"></script>
+
+<script type="text/javascript">
+	var num = 124;
+	document.write('num 출력 : ' + num + '<hr>');
+	document.write('<span style="color: red;">num 출력</span> : ' + num + '<hr>');
+	
+	var obj = null;
+	document.write(typeof 100.11 + "<br>");		// number
+	document.write(typeof num + "<br>");		// number
+	document.write(typeof obj + "<br>");		// object
+	document.write(typeof [1, 2, 3] + "<br>");	// object
+	document.write(typeof "test" + "<br>");		// string
+	
+	//var comGrade = prompt("숫자 입력");
+	//document.write("입력 숫자 : " + comGrade);
+	
+	var name = prompt("당신의 이름은?");
+	var age = prompt("당신의 나이는?");
+	var address = prompt("당신의 주소는?");
+	document.write("<table border='1'>");
+	document.write("<tr>");
+	document.write("<th>이름</th>");
+	document.write("<th>나이</th>");
+	document.write("<th>주소</th>");
+	document.write("</tr>");
+	document.write("<tr>");
+	document.write("<th>" + name + "</th>");
+	document.write("<th>" + age + "</th>");
+	document.write("<th>" + address + "</th>");
+	document.write("</tr>");
+	document.write("</table>");
+</script>
+</head>
+<body>
+	<button type="button" onclick="test()">버튼</button>
+</body>
+</html>

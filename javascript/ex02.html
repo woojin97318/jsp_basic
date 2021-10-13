@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 비교 연산자
+		var x = 5
+		var y = "5"
+		document.write("x == y : " + (x == y) + "<br>")		// 값만 비교ㅋ
+		document.write("x != y : " + (x != y) + "<br>")
+		
+		document.write("x === y : " + (x === y) + "<br>")	// 값과 type까지 비교
+		document.write("x !== y : " + (x !== y) + "<br>")
+		
+		// if문
+		var gender = "W";
+		var age = 21;
+		if(gender == "M") {
+			if(age >= 19) {
+				var result = "남자 성인입니다.";
+			}else {
+				var result = "남자 미성년자 입니다.";
+			}
+		}else if(gender = "W") {
+			if(age >= 19) {
+				var result = "여자 성인입니다.";
+			}else {
+				var result = "여자 미성년자 입니다.";
+			}
+		}
+		document.write(result + "<br>");
+		
+		// switch문
+		var day;
+		var week = new Date().getDay();	//0(일) ~ 6(토)
+		switch(week) {
+		case 0 : day = "일요일"; break;
+		case 1 : day = "월요일"; break;
+		case 2 : day = "화요일"; break;
+		case 3 : day = "수요일"; break;
+		case 4 : day = "목요일"; break;
+		case 5 : day = "금요일"; break;
+		case 6 : day = "토요일"; break;
+		}
+		document.write(day + "입니다.<br>");
+		
+		// for문
+		for(y = 1; y <= 9; y++) {
+			for(x = 2; x <= 9; x++) {
+				document.write(x + "*" + y + "=" + (x * y) + "&nbsp;");
+			}
+			document.write("<br>");
+		}
+		
+		// while문
+		var i = 1;
+		var sum = 0;
+		while(i <= 100) {
+			sum += i;
+			i++;
+		}
+		document.write(sum);
+		
+		// quiz02
+		var floor = prompt("아파트 층 수 입력");
+		document.write("<table border='1'>");
+		for(var j = floor; j > 0; j--) {
+			document.write("<tr>");
+			document.write("<td>" + (j * 10) + 1 + "호" +"</td>");
+			document.write("<td>" + (j * 10) + 2 + "호" +"</td>");
+			document.write("<td>" + (j * 10) + 3 + "호" +"</td>");
+			document.write("<td>" + (j * 10) + 4 + "호" +"</td>");
+			document.write("</tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>

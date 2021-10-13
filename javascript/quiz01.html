@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	div {
+		background-color: pink;
+	}
+	#img {
+		width: 500px; height: 500px;
+	}
+</style>
+
+<script type="text/javascript">
+	var n = 1
+	function previous() {
+		if(n !== 1) {
+			n--
+			document.getElementById("img").src = "resources/images/test" + n + ".jpg"
+		}
+	}
+	function next() {
+		if(n !== 8) {
+			n++
+			document.getElementById("img").src = "resources/images/test" + n + ".jpg"
+		}
+	}
+</script>
+</head>
+<body>
+	<div align="center">
+		<img id="img" src="resources/images/test1.jpg"><br>
+		<button type="button" onclick="previous()">이전사진</button>
+		<button type="button" onclick="next()">다음사진</button>
+	</div>
+</body>
+</html>

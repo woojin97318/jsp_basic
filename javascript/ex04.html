@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function click1() {
+		console.log('test');
+		var n = document.getElementById("name1").value;
+		console.log(n);
+		document.getElementById("name1").value = "";
+		document.getElementById("name2").value = n;
+		var n3 = document.getElementById("name3");
+		
+		var DBData = ['홍길동', '김개똥', '고도리'];
+		var msg = "<table border='1'>";
+		for(i=0; i<DBData.length ; i++){
+			msg += "<tr><th>" + DBData[i] + "</th></tr>";
+		}
+		msg += "</table>";
+		n3.innerHTML = msg;
+	}
+	
+	function setImg() {
+		document.getElementById("img").src = "16.gif";
+	}
+</script>
+<style type="text/css">
+	#img {
+		width: 100px;
+	}
+</style>
+</head>
+<body>
+	<img id="img" src="img.jpg"><br>
+	<button type="button" onclick="setImg()">이미지</button>
+	<hr>
+	<input type="text" id="name1"><br>
+	<input type="text" id="name2"><br>
+	<div id="name3">안녕하세요</div>
+	<input type="button" value="버튼" onclick="click1()"><br>
+</body>
+</html>
