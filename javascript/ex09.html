@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function insertOpt() {
+		var insert = document.getElementById("insert")
+		var DBdata = ["야구", "축구", "족구", "배구"]
+		for(i=0; i<DBdata.length; i++) {
+			var opt = document.createElement("option")
+			opt.value = DBdata[i]
+			opt.innerHTML = DBdata[i] + "111"
+			insert.appendChild(opt)
+		}
+	}
+</script>
+</head>
+<body onload="insertOpt()">
+	<form action="https://www.naver.com" method="get">
+		<select id="insert" name="select"></select>
+		<button type="submit">전송</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function init() {
+		//alert("환영합니다")
+	}
+	function over(obj) {
+		obj.style.color="red"
+	}
+	function out() {
+		document.getElementById("h1").style.color="black"
+		document.getElementById("h1").innerHTML="Mouse Out"
+	}
+</script>
+</head>
+<body onload="init()">
+	<h1 id="h1" onmouseover="over(this)" onmouseout="out()">
+		Mouse over this text
+	</h1>
+</body>
+</html>

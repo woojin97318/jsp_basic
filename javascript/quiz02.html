@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#img {
+		width: 500px; height: 500px;
+		
+	}
+</style>
+<script type="text/javascript">
+	var e
+	var n = 1
+	function start() {
+		if(n == 8) {
+			n = 0
+		}
+		n++
+		document.getElementById("img").src = "resources/images/최근상품0" + n + ".jpg"
+		e = setTimeout(start, 1000)
+	}
+	function stop() {
+		clearTimeout(e)
+	}
+</script>
+</head>
+<body>
+	<div align="center">
+		<img id="img" src="resources/images/최근상품01.jpg"><br>
+		<button type="button" onclick="start()">시작</button>
+		<button type="button" onclick="stop()">종료</button>
+	</div>
+</body>
+</html>
