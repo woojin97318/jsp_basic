@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#h2 {
+		width: 200px; height: 200px;
+		padding: 10px; margin-top: 100px;
+	}
+</style>
+<script type="text/javascript">
+	var e
+	var flag = true
+	
+	function init() {
+		var btn1 = document.getElementById("btn1")
+		var btn2 = document.getElementById("btn2")
+		var btn3 = document.getElementById("btn3")
+		var autobtn = document.getElementById("autobtn")
+		var removebtn = document.getElementById("removebtn")
+		var h2 = document.getElementById("h2")
+		
+		btn1.addEventListener("click", btn_listener)
+		btn2.addEventListener("click", btn_listener)
+		btn3.addEventListener("click", btn_listener)
+		autobtn.addEventListener("click", btn_listener)
+		removebtn.addEventListener("click", btn_listener)
+	}
+	
+	function btn_listener() {
+		switch(event.target.id) {
+		case "btn1" :
+			clearInterval(e)
+			h2.style.backgroundColor = "yellow"
+			h2.innerHTML = "버튼 1 클릭"
+			break
+		case "btn2" :
+			clearInterval(e)
+			h2.style.backgroundColor = "green";
+			h2.innerHTML = "버튼 2 클릭"
+			break
+		case "btn3" :
+			clearInterval(e)
+			h2.style.backgroundColor = "pink";
+			h2.innerHTML = "버튼 3 클릭"
+			break
+		case "autobtn" :
+			e = setInterval(auto, 300)
+			break
+		case "removebtn" :
+			clearInterval(e)
+			h2.style.backgroundColor = "white";
+			h2.innerHTML = ""
+			break
+		}
+	}
+	
+	function auto() {
+		if(flag) {
+			h2.style.backgroundColor = "red";
+			h2.innerHTML = "자동버튼 클릭"
+		}else {
+			h2.style.backgroundColor = "white";
+			h2.innerHTML = ""
+		}
+		flag = !flag
+	}
+</script>
+</head>
+<body onload="init()">
+	<div align="center">
+		<input type="button" id="btn1" value="버튼1">&nbsp;
+		<input type="button" id="btn2" value="버튼2">&nbsp;
+		<input type="button" id="btn3"  value="버튼3">&nbsp;
+		<input type="button" id="autobtn" value="자동">&nbsp;
+		<input type="button" id="removebtn" value="지우기">
+	</div>
+	<div align="center">
+		<h2 id="h2"></h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.wrapper {
+		width: 900px; height: 600px;
+		margin: auto;
+		display: flex;
+		border: 5px solid blue;
+	}
+	.light {
+		width: 150px;
+		background-color: gray;
+	}
+	.room {
+		width: 750px;
+		background-image: url("resources/images/room.jpg")
+	}
+	.light img {
+		width: 120px;
+	}
+	#dark {
+		width: 100%; height: 100%;
+		background-color: black;
+		opacity: 0;
+	}
+</style>
+<script type="text/javascript">
+	var flag = true
+	function turnOff() {
+		var op
+		var path
+		flag = !flag
+		if(flag) {
+			op = 0;
+			path = "resources/images/switch_on.png"
+		}else {
+			op = 0.8
+			path = "resources/images/switch_off.png"
+		}
+		document.getElementById("sw").src = path
+		document.getElementById("dark").style.opacity = op
+	}
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="light">
+			<img src="resources/images/switch_on.png" id="sw" onclick="turnOff()">
+		</div>
+		<div id="test" class="room">
+			<div id="dark"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	label {
+		color: red;
+	}
+</style>
+<script type="text/javascript">
+	function btn() {
+		var id = document.getElementById("id")
+		var pw = document.getElementById("pw")
+		var pwcheck = document.getElementById("pwcheck")
+		var pwcheckLb = document.getElementById("pwcheckLb")
+		pwcheckLb.style.color = "black"
+		
+		if(id.value == "") {
+			alert("아이디는 필수 사항입니다.")
+			idFocus()
+		}else if(pw.value == "") {
+			alert("비밀번호는 필수 사항입니다.")
+			pwFocus()
+		}else if(pwcheck.value == "") {
+			alert("비밀번호 확인은 필수 사항입니다.")
+			pwcheckFocus()
+		}else {
+			if(pw.value != pwcheck.value) {
+				pwcheckLb.innerHTML = "불일치!!"
+				pwcheck.value = ""
+				pwcheckFocus()
+			}else {
+				pwcheckLb.innerHTML = "확인!!"
+				alert("가입을 축하 합니다")
+			}
+		}
+	}
+	
+	function idFocus() {
+		document.getElementById("id").focus()
+	}
+	function pwFocus() {
+		document.getElementById("pw").focus()
+	}
+	function pwcheckFocus() {
+		document.getElementById("pwcheck").focus()
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="id"><label>(*필수항목)</label><br>
+	<input type="password" id="pw"><label>(*필수항목)</label><br>
+	<input type="password" id="pwcheck"><label id="pwcheckLb"></label><br>
+	<input type="text" id="name">
+	<hr>
+	<button type="button" onclick="btn()">등록</button>
+</body>
+</html>

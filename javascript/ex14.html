@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#tagAdd {
+		width: 300px;
+		border: 1px solid #999999;
+	}
+	tr:nth-child(even) {
+		background-color: beige;
+	}
+	#accountCel {
+		width: 30%;
+		text-align: center;
+	}
+	.balanceCel {
+		text-align: center;
+	}
+</style>
+<script type="text/javascript">
+	function tagAddFunc() {
+		let DBdata = [
+			{"name":"홍길동", "addr":"산골짜기"},
+			{"name":"김개똥", "addr":"개똥별"},
+			{"name":"고도리", "addr":"동양화"},
+			{"name":"고길동", "addr":"마포구"}
+		]
+		let table = document.getElementById("tagAdd")
+		for(i=0; i<DBdata.length; i++) {
+			tr = document.createElement("tr")
+			
+			tdN = document.createElement("td")
+			tdN.innerHTML = DBdata[i].name
+			tdN.id = "accountCel"
+			tr.appendChild(tdN)
+
+			tdA = document.createElement("td")
+			tdA.innerHTML = DBdata[i].addr
+			tdA.className = "balanceCel"
+			tr.appendChild(tdA)
+			
+			table.appendChild(tr)
+		}
+	}
+</script>
+</head>
+<body onload="tagAddFunc()">
+	<table id="tagAdd">
+		<tr>
+			<th>이&nbsp;&nbsp;&nbsp;름</th>
+			<th>주&nbsp;&nbsp;&nbsp;소</th>
+		</tr>
+	</table>
+</body>
+</html>

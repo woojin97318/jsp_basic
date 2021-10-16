@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myClick() {
+		//window.open("https://www.naver.com", "_self")
+		window.open("popup.html", "", "width=500, height=500")
+	}
+	
+	function test() {
+		// 무언가 연산을 하고 그리고 원한다면 넘겨주고 아니면 포커스나 얼럿 등 표현
+		fo.submit()
+	}
+	function btnMove() {
+		location.href="ex10.html"
+	}
+</script>
+</head>
+<body>
+	
+	<button type="button" onclick="btnMove()">함수로 이동</button>
+	<button type="button" onclick="location.href='ex10.html'">이동</button>
+	
+	<hr>
+	
+	<form id="fo" action="ex10.html">
+		<input type="text" name="name"><br>
+		<input type="text" name="age"><br>
+		<input type="submit" value="submit">
+		<input type="button" value="button" onclick="test()">
+		<button type="button" onclick="btnMove()">함수 이동</button>
+	</form>
+	
+	<hr>
+	
+	<input type="button" onclick="myClick()" value="클릭">
+</body>
+</html>
