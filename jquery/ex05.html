@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- JavaScript -->
+<script type="text/javascript">
+	$(function() {
+		$("#panel").click(function() {
+			$("#panel").slideUp("fast")
+		})
+		$("#slide").click(function() {
+			$("#panel").slideDown(5000)
+		})
+		$("#flip").click(function() {
+			$("#panel").slideToggle("slow")
+		})
+		$("#stop").click(function() {
+			$("#panel").stop()
+		})
+	})
+</script>
+<!-- css -->
+<style type="text/css">
+	#slide, #panel, #flip {
+		padding: 5px;
+		text-align: center;
+		background-color: gray;
+		border: 1px solid black;
+	}
+	#panel {
+		padding: 70px;
+		background-color: #ffff00;
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<button id="stop">stop slide</button>
+	<div id="slide">[오늘의 공지사항]</div>
+	<div id="panel">
+		오늘은 날씨가 많이 추워요<br>
+		감기 조심하세요
+	</div>
+	<div id="flip">toggle slide</div>
+	<button id="stop">stop slide</button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- JavaScript -->
+<script type="text/javascript">
+	$(function() {
+		$("button.b1").click(function() {
+			// $("img").css({ width: "100px", height: "100px" })
+			// $("img").css({ width: "100px" })
+			$("img").animate({ width: "100px" })
+		})
+		$("button.b2").click(function() {
+			// $("img").css({ width: "200px" })
+			$("img").animate({ width: "200px" })
+		})
+		$("button.b3").click(function() {
+			// $("img").css({ width: "300px" })
+			$("img").animate({ width: "300px" })
+		})
+	})
+</script>
+<!-- css -->
+<style type="text/css">
+	.css_pic {
+		height: 430px;
+	}
+	.css_pic img { width: 250px; }
+</style>
+</head>
+<body>
+	<div class="css_pic">
+		<button class="b1">100픽셀</button>
+		<button class="b2">200픽셀</button>
+		<button class="b3">300픽셀</button>
+		<hr>
+		<img src="resources/images/car01.png">
+	</div>
+</body>
+</html>

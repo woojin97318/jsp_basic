@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- jQuery -->
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-1.12.1-ui.js"></script>
+
+
+<!-- JavaScript -->
+<script type="text/javascript">
+	$(function() {
+		$("#draggable").draggable()
+	})
+</script>
+
+<!-- css -->
+<style type="text/css">
+	.drag {
+		width: 200px; height: 100px;
+		padding: 0 0.5em;
+		background-color: red;
+		border-style: solid;
+	}
+</style>
+</head>
+<body>
+	<div class="drag" id="draggable">
+		<p>Drag me around</p>
+	</div>
+</body>
+</html>

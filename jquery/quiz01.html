@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- jQuery -->
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-1.12.1-ui.js"></script>
+
+<script type="text/javascript">
+	var font = 15
+	$(function() {
+		$("#draggable").draggable()
+		
+		$("img.plus").click(function() {
+	        $("div.wrap").css({"font-size": font+=3 });
+	        $("div.sizeLb").text(font);
+	    });
+		
+		$("img.minus").click(function() {
+	        $("div.wrap").css({"font-size": font-=3 });
+	        $("div.sizeLb").text(font);
+	    });
+	})
+</script>
+
+<!-- css -->
+<style type="text/css">
+	.wrap {
+		width: 960px; height: 400px;
+	}
+	.drag {
+		width: 150px; height: 100px;
+		position: fixed;
+		right: 10px; top: 10px;
+		background-color: white;
+		border-style: solid;
+	}
+	.btn {
+		display: flex;
+		margin-top: 20px; margin-left: 20px;
+	}
+	img {
+		width: 30px; height: 30px;
+		cursor: pointer;
+	}
+	.remote {
+		height: 20px;
+		text-align: center;
+		background-color: yellow;
+		cursor: default;
+	}
+	.minus {
+		order: 1;
+	}
+	.sizeLb {
+		order: 2;
+		width: 50px; height: 20px;
+		text-align: center;
+		margin-top: 5px;
+		background-color: yellow;
+	}
+	.plus {
+		order: 3;
+	}
+</style>
+
+</head>
+<body>
+	<div class="wrap">
+		<h1>오늘의 소설</h1>
+		<h5>오늘도 춥다</h5>
+		<h5>내일도 춥다</h5>
+		<h5>모레도 춥다</h5>
+	</div>
+	<div id="draggable" class="drag">
+		<div class="remote">리 모 콘</div>
+		<div class="btn">
+			<img class="minus" src="resources/images/sub.jpg">
+			<div class="sizeLb">15</div>
+			<img class="plus" src="resources/images/add.png">
+		</div>
+	</div>
+</body>
+</html>

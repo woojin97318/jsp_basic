@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// 아래 3가지 전부 같은 의미
+	$(document).ready(function() {
+		console.log(111)
+	})
+	$().ready(function() {
+		console.log(222)
+	})
+	$(function() {
+		console.log(333)
+		$("button").click(function() {
+			//$("p").hide()
+		})
+		$("#show").click(function() {
+			$("p").show()
+		})
+	})
+	function my_show() {
+		$("#p").hide()
+		document.getElementById("p").style.display="none"
+	}
+</script>
+</head>
+<body>
+	<p id="p">안녕하세요</p>
+	<button onclick="my_show()">hide</button>
+	<button id="show">show</button>
+</body>
+</html>

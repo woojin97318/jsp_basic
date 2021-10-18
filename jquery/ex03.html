@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- JavaScript -->
+<script type="text/javascript">
+	$(function() {
+		$("button.add").click(function() {
+			$("h1, p, div").addClass("blue")
+		})
+		$(".remove").click(function() {
+			$("h1, p").removeClass("blue")
+		})
+		$(".toggle").click(function() {
+			$("h1, p").toggleClass("border")
+		})
+	})
+</script>
+<style type="text/css">
+	.blue {
+		color: blue
+	}
+	.border {
+		border: 2px solid red;
+	}
+</style>
+</head>
+<body>
+	<h1>test</h1>
+	<p>test</p>
+	<div>test</div>
+	<br>
+	<button class="add">add</button>
+	<button class="remove">remove</button>
+	<button class="toggle">toggle</button>
+</body>
+</html>
