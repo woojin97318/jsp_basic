@@ -14,6 +14,7 @@
 </head>
 <body>
 	<c:import url="../default/header.jsp"/>
+	
 	<div class="wrap">
 		<jsp:useBean id="dto" class="com.care.root.member.dto.MemberDTO"/>
 		<jsp:useBean id="dao" class="com.care.root.member.dao.MemberDAO"/>
@@ -29,7 +30,7 @@
 			</c:when>
 			<c:otherwise>
 				<script type="text/javascript">
-					alert("회원가입 불가능");
+					alert("아이디 중복으로 회원가입 불가능");
 					location.href="${contextPath}/member/membership.jsp";
 				</script>
 			</c:otherwise>
@@ -50,6 +51,7 @@
 			}
 		--%>
 	</div>
+	
 	<c:import url="../default/footer.jsp"/>
 </body>
 </html>

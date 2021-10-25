@@ -10,6 +10,7 @@
 </head>
 <body>
 	<c:import url="../default/header.jsp"/>
+	
 	<div class="wrap">
 		<form action="${contextPath }/member/register.jsp" method="post">
 			<input type="text" name="id" placeholder="input id"><br>
@@ -19,6 +20,7 @@
 			<input type="submit" value="register">
 		</form>
 	</div>
+	
 	<c:import url="../default/footer.jsp"/>
 </body>
 </html>

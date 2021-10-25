@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 <style type="text/css">
 	* {
 		margin: 0;
@@ -18,6 +19,12 @@
 	.header {
 		width: 1000px;
 		background-color: white;
+	}
+	.title {
+    	text-shadow: 10px 10px 15px black;/*오른, 아래, 번짐*/
+    	font-size: 70pt; text-align: center;
+    	margin-top: 0px; padding-bottom: 20px;
+    	color:burlywood; font-family:Gabriola;
 	}
 	.navdiv {
 		width: 100%;
@@ -45,16 +52,11 @@
     	border-bottom: 1px solid orange;
     	transition: all 0.25s;
 	}
-	.title {    /*오른, 아래, 번짐*/
-    	text-shadow: 10px 10px 15px black;
-    	font-size: 70pt; text-align: center;
-    	margin-top: 0px; padding-bottom: 20px;
-    	color:burlywood; font-family:Gabriola;
-	}
 	.content {
 		margin-top: 50px;
 	}
 </style>
+
 </head>
 <body>
 	<div class="wrap">

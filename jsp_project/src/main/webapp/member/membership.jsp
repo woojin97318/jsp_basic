@@ -10,10 +10,11 @@
 </head>
 <body>
 	<c:import url="../default/header.jsp"/>
+	
 	<div class="wrap">
 		<jsp:useBean id="dao" class="com.care.root.member.dao.MemberDAO"/>
 		<c:set var="list" value="${dao.getMemberList() }"/>
-		리턴값 : ${list }
+		<!--리턴값 : ${list }-->
 		<table border="1">
 			<tr>
 				<th>아이디</th>
@@ -25,7 +26,7 @@
 				<tr>
 					<td>${member.id }</td>
 					<td>${member.pwd }</td>
-					<td>${member.name }</td>
+					<td><a href="${contextPath }/member/member_info.jsp?id=${member.id}">${member.name }</a></td>
 					<td>${member.addr }</td>
 				</tr>
 			</c:forEach>
@@ -38,6 +39,7 @@
 			</tr>
 		</table>
 	</div>
+	
 	<c:import url="../default/footer.jsp"/>
 </body>
 </html>
