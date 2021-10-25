@@ -29,7 +29,7 @@
 	%>
 	<% if(!bool) { %>
 		<script type="text/javascript">
-			window.open("popup.jsp", "", "width=300, height=200, top=500, left=500")
+			window.open("popup.jsp", "", "width=400, height=300, top=500, left=500")
 		</script>
 	<% } %>
 </body>
