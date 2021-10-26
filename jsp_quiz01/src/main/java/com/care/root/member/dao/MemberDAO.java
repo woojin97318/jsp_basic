@@ -44,8 +44,8 @@ public class MemberDAO {
 		return dto;
 	}
 	
-	public int sighUp(MemberDTO dto) {
-		String sql = "insert into jsp_member(id, pwd, name, addr) value(?, ?, ?, ?)";
+	public int signUp(MemberDTO dto) {
+		String sql = "insert into jsp_member(id, pwd, name, addr) values(?, ?, ?, ?)";
 		int result = 0;
 		try {
 			ps = con.prepareStatement(sql);

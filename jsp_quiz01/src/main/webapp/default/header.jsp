@@ -69,7 +69,17 @@
 			<nav>
     			<ul>
 					<li><a href="${contextPath }/default/main.jsp">HOME</a></li>
-					<li><a href="${contextPath }/member/login.jsp">LOGIN</a></li>
+					<li><a href="${contextPath }/page/board.jsp">BOARD</a></li>
+					<li>
+						<c:choose>
+							<c:when test="${loginUser == null }">
+								<a href="${contextPath }/member/login.jsp">LOGIN</a>
+							</c:when>
+							<c:otherwise>
+								<a href="${contextPath }/member/logout.jsp">LOGOUT</a>
+							</c:otherwise>
+						</c:choose>
+					</li>
     			</ul>
 			</nav>
 		</div>

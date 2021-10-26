@@ -24,7 +24,11 @@
 		<c:when test="${dbId eq inputId }">
 			<c:choose>
 				<c:when test="${dbPwd eq inputPwd }">
-로그인 완료<!-- 아이디 세션 / 네비 로그아웃으로 바꿈 -->
+					<c:set var="loginUser" value="${param.inputId}" scope="session"/>
+					<script type="text/javascript">
+						alert("${inputId}님 환영합니다.")
+						location.href="${contextPath}/default/main.jsp"
+					</script>
 				</c:when>
 				<c:otherwise>
 					<script type="text/javascript">
@@ -36,7 +40,7 @@
 		</c:when>
 		<c:otherwise>
 			<script type="text/javascript">
-				alert("아이디가 일치하지 않습니다.")
+				alert("해당 아이디가 존재하지 않습니다.")
 				location.href="${contextPath}/member/login.jsp"
 			</script>
 		</c:otherwise>
