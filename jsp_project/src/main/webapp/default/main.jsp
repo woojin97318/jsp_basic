@@ -1,28 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
 <style type="text/css">
-	.mainTable {
-		margin: auto;
-	}
-	.mainTable td {
-		text-align: center;
-	}
-	.name {
-		text-align: right;
-	}
-</style>
+.mainTable {
+	margin: auto;
+}
 
+.mainTable td {
+	text-align: center;
+}
+
+.name {
+	text-align: right;
+}
+</style>
 </head>
 <body>
-	<c:import url="header.jsp"/>
-	
+	<jsp:include page="header.jsp" />
 	<div class="wrap content">
 		<table class="mainTable">
 			<tr>
@@ -39,7 +37,6 @@
 			</tr>
 		</table>
 	</div>
-	
 	<jsp:include page="footer.jsp" />
 </body>
 </html>

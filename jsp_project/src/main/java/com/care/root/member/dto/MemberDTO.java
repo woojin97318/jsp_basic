@@ -1,11 +1,10 @@
 package com.care.root.member.dto;
 
 public class MemberDTO {
-	private String id;
-	private String pwd;
+	private String id; 
+	private String pwd ;
 	private String name;
 	private String addr;
-	
 	public String getId() {
 		return id;
 	}
@@ -30,4 +29,5 @@ public class MemberDTO {
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
+	
 }
