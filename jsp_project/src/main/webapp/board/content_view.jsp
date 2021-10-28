@@ -13,7 +13,7 @@
 
 	<div class="wrap">
 		<jsp:useBean id="dao" class="com.care.root.board.dao.BoardDAO"/>
-		<c:set var="dto" value="${dao.contentView(param.id) }"/>
+		<c:set var="dto" value="${dao.contentView(param.id, 1) }"/>
 		
 		<form action="${contextPath }/board/modify.jsp" method="post">
 			<table border="1">
@@ -50,7 +50,7 @@
 						<input type="submit" value="수정">&nbsp;&nbsp;
 						<a href="list.jsp">목록</a>&nbsp;&nbsp;
 						<a href="delete.jsp?id=${dto.id }">삭제</a>&nbsp;&nbsp;
-						<a href="">답변</a>
+						<a href="reply_view.jsp?id=${dto.id }">답변</a>
 					</td>
 				</tr>
 			</table>
